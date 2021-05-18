@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    android:elevation="4dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:title="Home" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context=".ui.home.HomeFragment">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="center"
+                    android:src="@drawable/drzewka"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#AA000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/aboutHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/home_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/aboutText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="@string/home_about"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutHeader" />
+
+                <TextView
+                    android:id="@+id/homeDesignersHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="@string/home_designers"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutText" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/designersTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/homeDesignersHeader"
+                    app:tabContentStart="36dp"
+                    app:tabMode="scrollable" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/designersViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/designersTabLayout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>

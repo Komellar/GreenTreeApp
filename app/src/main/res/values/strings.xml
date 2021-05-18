@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">GreenTree</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_plants">Rośliny</string>
+    <string name="menu_projects">Projekty</string>
+    <string name="menu_adviser">Doradca</string>
+    <string name="menu_contact">Kontakt</string>
+
+    <string name="home_main">GreenTree to firma, która zaprojektuje i wykona projekt twojego ogrodu.</string>
+    <string name="home_about">Posiadamy ogromne doświadczenie na rynku globalnym. Działamy nieprzerwalnie od 1976 roku. W tym czasie zdołaliśmy zgromadzić ogromne ilości pozytywnych opinii na temat naszej pracy. Tworzymy projekty zapierające dech w piersiach.</string>
+    <string name="home_designers">Nasz zespół projektantów ogrodów:</string>
+
+    <string name="designer1">Maciek</string>
+    <string name="designer2">Ela</string>
+    <string name="designer3">Andrzej</string>
+    <string name="designer4">Marek</string>
+    <string name="designer5">Kasia i Basia</string>
+
+    <string name="designer_desc1">Uwielbia sadzić dużo kwiatów. Sądzi, iż dodają one kolorytu.</string>
+    <string name="designer_desc2">Jej domeną są małe podwórka, w których potrafi zmieścić napradę wiele zielenii.</string>
+    <string name="designer_desc3">Spec jakich mało! Bez żadnych skrupułów zmieni twoje podwórko w istny cud.</string>
+    <string name="designer_desc4">Jego główną zasadą jest to by podwórko było funkcjonalne.</string>
+    <string name="designer_desc5">Ta dwójka idealnie się dopełnia. Po prostu duo idealne.</string>
+    <string name="title_activity_project">ProjectActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="contact">Siedziba główna: Wrocław, ul Wejherowska 6
+        \nTelefon: 666 666 666
+        \nEmail: greentree@example.com
+        \nGodziny otwarcia: 6-22</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_message">MessageActivity</string>
+
+    <string name="messageAddress">greentree@exmaple.com</string>
+    <string name="messageTitle">Tytuł</string>
+    <string name="messageText">Wiadomość</string>
+</resources>
